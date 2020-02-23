@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'shop',
     'search_app',
     'cart',
+    'stripe',
+    'order',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +59,7 @@ ROOT_URLCONF = 'perfectcushion.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'shop', 'templates/'), os.path.join(BASE_DIR, 'search_app', 'templates/'), os.path.join(BASE_DIR, 'cart', 'templates/')],
+        'DIRS': [os.path.join(BASE_DIR, 'shop', 'templates/'), os.path.join(BASE_DIR, 'search_app', 'templates/'), os.path.join(BASE_DIR, 'cart', 'templates/'), os.path.join(BASE_DIR, 'order', 'templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,3 +132,8 @@ STATICFILES_DIRS = (
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
+
+
+### Stripe Settings ###
+STRIPE_PUBLISHABLE_KEY = 'pk_test_YQJx62drgSjZY7yUIVTO5eDR00LrpLbhWg'
+STRIPE_SECRET_KEY = 'sk_test_442i17mb1jL4OMbG3JDHYIzj00caUlz9FV'
