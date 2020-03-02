@@ -140,3 +140,12 @@ STRIPE_PUBLISHABLE_KEY = 'pk_test_YQJx62drgSjZY7yUIVTO5eDR00LrpLbhWg'
 STRIPE_SECRET_KEY = 'sk_test_442i17mb1jL4OMbG3JDHYIzj00caUlz9FV'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+### Email Message Settings ###
+EMAIL_HOST = 'smtp.mailgun.org'
+EMAIL_PORT = '587'
+EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'postmaster@sandbox11567a431d9c48e7853ccc68720d0bd9.mailgun.org'
+# EMAIL_HOST_PASSWORD = 'c4692630c0ffef0726eaa46a6b700c1f-9dda225e-e96a4b73'
+EMAIL_HOST_USER = 'radlad@sandbox11567a431d9c48e7853ccc68720d0bd9.mailgun.org'
+EMAIL_HOST_PASSWORD = 'b3030b65eac265bca69a002904d8f295-9dda225e-676dd13d'
